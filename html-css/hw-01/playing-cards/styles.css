@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+.main {
+  background: #ffffff;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.player {
+  margin: 20px 0;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  background-color: #e7e5e5;
+  height: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.hearts,
+.diamonds {
+  color: red;
+}
+
+.clubs,
+.spades {
+  color: black;
+}
