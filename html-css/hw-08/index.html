@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card UI Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card">
+        <div class="front">
+          <header>
+            <span class="logo">
+              <img src="images/logo.png" alt="Logo" />
+              <h5>Master Card</h5>
+            </span>
+            <img src="images/chip.png" alt="Chip" class="chip" />
+          </header>
+
+          <div class="card-details">
+            <div class="name-number">
+              <h6>Card Number</h6>
+              <input
+                type="text"
+                class="number"
+                maxlength="19"
+                placeholder="8050 5040 2030 3020"
+              />
+              <h6>Cardholder Name</h6>
+              <input type="text" class="name" placeholder="Prem Kumar Shahi" />
+            </div>
+            <div class="valid-date">
+              <h6>Valid Thru</h6>
+              <input
+                type="text"
+                class="date-valid"
+                placeholder="05/28"
+                maxlength="5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="back">
+          <div class="cvv-container">
+            <h6>Enter CVV</h6>
+            <input type="text" class="cvv" maxlength="3" placeholder="XXX" />
+          </div>
+        </div>
+      </div>
+      <p class="hint">Click on the card to flip and enter the CVV code.</p>
+    </div>
+    <button class="submit-btn">Submit</button>
+
+    <script src="script.js"></script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
