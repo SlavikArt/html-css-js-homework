@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+.canvas-container {
+  border: 1px solid #000;
+  display: inline-block;
+  position: relative;
+}
+
+canvas {
+  display: block;
+}
+
+#clearCanvas {
+  width: 800px;
+  height: 50px;
+  font-size: x-large;
+  font-weight: 500;
+}
