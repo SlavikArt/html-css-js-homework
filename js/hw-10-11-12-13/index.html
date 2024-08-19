@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Js 10-11-12-13</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Пошук фільмів</h1>
+      <form id="searchForm">
+        <input
+          type="text"
+          id="movieTitle"
+          placeholder="Введіть назву фільму"
+          required
+        />
+        <select id="type">
+          <option value="movie">Фільм</option>
+          <option value="series">Серіал</option>
+          <option value="episode">Епізод</option>
+        </select>
+        <button type="submit">Пошук</button>
+      </form>
+      <div id="sortButtons">
+        <button id="sortByName">Сортувати за назвою</button>
+        <button id="sortByDate">Сортувати за датою</button>
+      </div>
+      <div id="loading">
+        <img src="https://i.gifer.com/ZKZg.gif" alt="Завантаження..." />
+      </div>
+      <div id="results"></div>
+      <div id="pagination"></div>
+      <button id="moreButton" style="display: none">More</button>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <div id="modalLoading">
+          <img src="https://i.gifer.com/ZKZg.gif" alt="Завантаження..." />
+        </div>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
