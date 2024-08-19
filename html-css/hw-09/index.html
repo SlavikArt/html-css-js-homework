@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourStat</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">YourStat</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Homework</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <header class="d-flex justify-content-between align-items-center my-4">
+        <h1>YourStat - Домашні завдання</h1>
+        <div class="color-codes">
+          <span class="badge badge-primary">Нові</span>
+          <span class="badge badge-success">Перевірені</span>
+          <span class="badge badge-danger">Прострочені</span>
+        </div>
+      </header>
+
+      <div class="subject-block">
+        <h2>JavaScript</h2>
+        <div class="task-container">
+          <div class="task">
+            <h5>Тема: Цикли</h5>
+            <p>Дата видачі: 2024-08-19</p>
+            <div class="btn-group">
+              <div class="btn-row">
+                <button class="btn btn-primary upload-btn">Завантажити</button>
+                <button class="btn btn-warning reupload-btn">
+                  Перезавантажити
+                </button>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-danger delete-btn">Видалити</button>
+                <button class="btn btn-info download-btn">Скачати</button>
+              </div>
+            </div>
+            <p class="grade">
+              Оцінка: <span class="badge badge-success">12</span>
+            </p>
+          </div>
+          <div class="task">
+            <h5>Тема: Умови</h5>
+            <p>Дата видачі: 2024-08-18</p>
+            <div class="btn-group">
+              <div class="btn-row">
+                <button class="btn btn-primary upload-btn">Завантажити</button>
+                <button class="btn btn-warning reupload-btn">
+                  Перезавантажити
+                </button>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-danger delete-btn">Видалити</button>
+                <button class="btn btn-info download-btn">Скачати</button>
+              </div>
+            </div>
+            <p class="grade">
+              Оцінка: <span class="badge badge-success">12</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject-block">
+        <h2>HTML & CSS</h2>
+        <div class="task-container">
+          <div class="task">
+            <h5>Тема: Верстка</h5>
+            <p>Дата видачі: 2024-08-14</p>
+            <div class="btn-group">
+              <div class="btn-row">
+                <button class="btn btn-primary upload-btn">Завантажити</button>
+                <button class="btn btn-warning reupload-btn">
+                  Перезавантажити
+                </button>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-danger delete-btn">Видалити</button>
+                <button class="btn btn-info download-btn">Скачати</button>
+              </div>
+            </div>
+            <p class="grade">
+              Оцінка: <span class="badge badge-success">12</span>
+            </p>
+          </div>
+          <div class="task">
+            <h5>Тема: Стилі</h5>
+            <p>Дата видачі: 2024-08-15</p>
+            <div class="btn-group">
+              <div class="btn-row">
+                <button class="btn btn-primary upload-btn">Завантажити</button>
+                <button class="btn btn-warning reupload-btn">
+                  Перезавантажити
+                </button>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-danger delete-btn">Видалити</button>
+                <button class="btn btn-info download-btn">Скачати</button>
+              </div>
+            </div>
+            <p class="grade">
+              Оцінка: <span class="badge badge-secondary">Не перевірено</span>
+            </p>
+          </div>
+          <div class="task">
+            <h5>Тема: Таблиці</h5>
+            <p>Дата видачі: 2024-08-16</p>
+            <div class="btn-group">
+              <div class="btn-row">
+                <button class="btn btn-primary upload-btn">Завантажити</button>
+                <button class="btn btn-warning reupload-btn">
+                  Перезавантажити
+                </button>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-danger delete-btn">Видалити</button>
+                <button class="btn btn-info download-btn">Скачати</button>
+              </div>
+            </div>
+            <p class="grade">
+              Оцінка: <span class="badge badge-secondary">Не перевірено</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
